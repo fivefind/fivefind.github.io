@@ -11,7 +11,7 @@ body {
     color: white;
 
     background:
-    radial-gradient(circle at top, #35105f 0%, #08000f 55%, #030005 100%);
+    radial-gradient(circle at top, #3b1268, #07000d 65%);
 
     overflow-x: hidden;
 }
@@ -26,6 +26,7 @@ body {
     height: 100%;
 
     z-index: 0;
+
     pointer-events: none;
 }
 
@@ -34,6 +35,7 @@ body {
 .site {
 
     position: relative;
+
     z-index: 2;
 
     max-width: 1200px;
@@ -46,6 +48,8 @@ body {
 
 
 
+/* HEADER */
+
 header {
 
     display: flex;
@@ -57,20 +61,21 @@ header {
 }
 
 
-
 .logo {
 
-    font-size: 32px;
+    font-size: 34px;
 
     font-weight: 900;
-
-    letter-spacing: -1px;
 
 }
 
 
 
-.language button {
+.languages button {
+
+    padding: 8px 15px;
+
+    border-radius: 12px;
 
     border: 1px solid rgba(255,255,255,.2);
 
@@ -78,17 +83,11 @@ header {
 
     color:white;
 
-    padding:8px 14px;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
 }
 
 
 
-.language .active {
+.languages .active {
 
     background:#a855ff;
 
@@ -96,41 +95,24 @@ header {
 
 
 
+
+
+/* HERO */
+
+
 .hero {
 
-    min-height:750px;
+    text-align:center;
+
+    min-height:720px;
 
     display:flex;
 
     flex-direction:column;
 
-    align-items:center;
-
     justify-content:center;
 
-    text-align:center;
-
-    position:relative;
-
-}
-
-
-
-.main-glow {
-
-    position:absolute;
-
-    width:400px;
-
-    height:400px;
-
-    background:#9b5cff;
-
-    filter:blur(140px);
-
-    opacity:.25;
-
-    z-index:-1;
+    align-items:center;
 
 }
 
@@ -138,17 +120,21 @@ header {
 
 .badge {
 
-    padding:10px 20px;
+    padding:12px 25px;
 
-    border-radius:30px;
+    border-radius:50px;
 
-    background:rgba(255,255,255,.08);
+    background:
 
-    border:1px solid rgba(255,255,255,.15);
+    rgba(255,255,255,.08);
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
 
     backdrop-filter:blur(15px);
 
-    margin-bottom:25px;
+    margin-bottom:30px;
 
 }
 
@@ -156,7 +142,7 @@ header {
 
 h1 {
 
-    font-size:70px;
+    font-size:72px;
 
     line-height:1.05;
 
@@ -172,7 +158,7 @@ h1 span {
 
     text-shadow:
 
-    0 0 25px rgba(181,108,255,.7);
+    0 0 30px #a855ff;
 
 }
 
@@ -186,10 +172,13 @@ h1 span {
 
     opacity:.8;
 
-    max-width:600px;
-
 }
 
+
+
+
+
+/* BUTTONS */
 
 
 .buttons {
@@ -212,6 +201,8 @@ h1 span {
 
     text-decoration:none;
 
+    color:white;
+
     font-weight:800;
 
     transition:.3s;
@@ -220,31 +211,29 @@ h1 span {
 
 
 
-.primary {
-
-    color:white;
+.main {
 
     background:
 
-    linear-gradient(135deg,#b35cff,#6d28d9);
+    linear-gradient(135deg,#c05cff,#7028d9);
 
     box-shadow:
 
-    0 0 30px rgba(168,85,255,.5);
+    0 0 35px rgba(168,85,255,.6);
 
 }
 
 
 
-.secondary {
+.dark {
 
-    color:white;
+    background:
 
-    background:rgba(255,255,255,.08);
+    rgba(255,255,255,.1);
 
-    border:1px solid rgba(255,255,255,.2);
+    border:
 
-    backdrop-filter:blur(10px);
+    1px solid rgba(255,255,255,.2);
 
 }
 
@@ -258,7 +247,12 @@ h1 span {
 
 
 
-.showcase {
+
+
+/* CARDS */
+
+
+.cards {
 
     display:flex;
 
@@ -270,11 +264,11 @@ h1 span {
 
 
 
-.item {
+.card {
 
     width:260px;
 
-    padding:30px;
+    padding:35px;
 
     border-radius:30px;
 
@@ -294,19 +288,15 @@ h1 span {
 
 
 
-.item:hover {
+.card:hover {
 
-    transform:translateY(-10px);
-
-    box-shadow:
-
-    0 20px 50px rgba(0,0,0,.4);
+    transform:translateY(-12px);
 
 }
 
 
 
-.icon {
+.emoji {
 
     font-size:55px;
 
@@ -315,37 +305,66 @@ h1 span {
 }
 
 
-
-.icon.purple {
-
-    filter:
-
-    drop-shadow(0 0 20px #b56cff);
-
-}
-
-
-
-.item h3 {
-
-    font-size:25px;
-
-    margin-bottom:10px;
-
-}
-
-
-
-.item p {
+.card p {
 
     opacity:.7;
 
+    margin-top:10px;
+
 }
 
 
 
 
-.features {
+
+/* CREATOR */
+
+
+.creator {
+
+    margin:80px 0;
+
+}
+
+
+
+.creator-box {
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:
+
+    rgba(255,255,255,.07);
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+.avatar {
+
+    font-size:70px;
+
+}
+
+
+
+
+/* INFO */
+
+
+.info {
 
     display:grid;
 
@@ -353,13 +372,13 @@ h1 span {
 
     gap:25px;
 
-    margin:50px 0;
+    margin-bottom:70px;
 
 }
 
 
 
-.feature {
+.info div {
 
     padding:30px;
 
@@ -377,90 +396,15 @@ h1 span {
 
 
 
-.feature h2 {
+.info p {
 
-    margin-bottom:15px;
-
-}
-
-
-
-.feature p {
+    margin-top:15px;
 
     opacity:.7;
 
 }
 
 
-
-
-.telegram {
-
-    text-align:center;
-
-    padding:60px 30px;
-
-    border-radius:35px;
-
-    background:
-
-    linear-gradient(
-
-    135deg,
-
-    rgba(168,85,255,.25),
-
-    rgba(255,255,255,.05)
-
-    );
-
-
-
-    border:
-
-    1px solid rgba(255,255,255,.15);
-
-}
-
-
-
-.telegram h2 {
-
-    font-size:45px;
-
-}
-
-
-
-.telegram p {
-
-    margin:20px;
-
-    opacity:.8;
-
-}
-
-
-
-.telegram a {
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:16px 35px;
-
-    border-radius:18px;
-
-    background:#a855ff;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-}
 
 
 
@@ -477,6 +421,7 @@ footer {
 
 
 
+
 @media(max-width:800px){
 
 
@@ -487,7 +432,8 @@ h1 {
 }
 
 
-.showcase {
+
+.cards {
 
     flex-direction:column;
 
@@ -495,7 +441,7 @@ h1 {
 
 
 
-.item {
+.card {
 
     width:100%;
 
@@ -503,7 +449,7 @@ h1 {
 
 
 
-.features {
+.info {
 
     grid-template-columns:1fr;
 
@@ -523,17 +469,17 @@ h1 {
 
 .buttons a {
 
-    width:100%;
+    text-align:center;
 
 }
 
 
 
-.hero {
+.creator-box {
 
-    min-height:auto;
+    flex-direction:column;
 
-    padding:80px 0;
+    text-align:center;
 
 }
 
