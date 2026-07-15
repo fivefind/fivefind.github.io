@@ -1,0 +1,77 @@
+const translations = {
+
+    ru: {
+        title: "Создай свой подарок с FiveFind!",
+        subtitle: "Дарите Telegram Premium и Stars красиво, быстро и удобно.",
+        button1: "Открыть бота",
+        button2: "Узнать больше"
+    },
+
+
+    en: {
+        title: "Create your gift with FiveFind!",
+        subtitle: "Give Telegram Premium and Stars in a beautiful and simple way.",
+        button1: "Open bot",
+        button2: "Learn more"
+    }
+
+};
+
+
+
+function changeLang(lang) {
+
+    document.getElementById("title").innerText =
+        translations[lang].title;
+
+
+    document.getElementById("subtitle").innerText =
+        translations[lang].subtitle;
+
+
+    document.querySelector(".main-btn").innerText =
+        translations[lang].button1;
+
+
+    document.querySelector(".second-btn").innerText =
+        translations[lang].button2;
+
+
+    localStorage.setItem("language", lang);
+
+}
+
+
+
+
+// сохраняем выбранный язык
+
+const savedLang = localStorage.getItem("language");
+
+
+if(savedLang){
+
+    changeLang(savedLang);
+
+}
+
+
+
+// появление элементов при загрузке
+
+window.onload = () => {
+
+    document.querySelector(".hero").style.opacity = "0";
+    document.querySelector(".hero").style.transform = "translateY(30px)";
+
+
+    setTimeout(()=>{
+
+        document.querySelector(".hero").style.transition = "1s";
+        document.querySelector(".hero").style.opacity = "1";
+        document.querySelector(".hero").style.transform = "translateY(0)";
+
+    },200);
+
+
+};
