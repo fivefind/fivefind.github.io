@@ -1,398 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<title>FiveFind — Telegram Stars и Premium подарки</title>
-
-
-<meta name="description" content="FiveFind — удобный сервис для Telegram Stars, Premium и подарков. Создавайте и отправляйте подарки в Telegram.">
-
-
-<meta name="keywords" content="FiveFind, Telegram Stars, Telegram Premium, подарки Telegram">
-
-
-<meta name="author" content="FiveFind">
-
-
-<!-- Google Search Console -->
-<meta name="google-site-verification" content="3b5e0515ee2435ca">
-
-
-<!-- Telegram / Social preview -->
-<meta property="og:title" content="FiveFind — Telegram подарки">
-
-<meta property="og:description" content="Stars, Premium и другие подарки в одном месте">
-
-<meta property="og:type" content="website">
-
-
-
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-
+<title>FiveFind — Telegram Stars Gifts</title>
 
 <link rel="stylesheet" href="style.css">
-
-
 </head>
-
-
 
 <body>
 
-
-<div class="stars"></div>
-
-
+<canvas id="stars-canvas"></canvas>
 
 <header>
-
-
-<div class="logo">
-    FiveFind
-</div>
-
-
-
-<nav>
-
-<button onclick="changeLang('ru')">
-RU
-</button>
-
-
-<button onclick="changeLang('en')">
-EN
-</button>
-
-
-</nav>
-
-
+    <div class="logo">
+        ⭐ FiveFind
+    </div>
 </header>
-
-
-
 
 
 <main>
 
-
-
-
 <section class="hero">
 
-
-<div class="brand-icon">
-
-⭐
-
-</div>
-
-
-
-<h1 id="title">
-
-Подарки в Telegram,
-<br>
-которые хочется отправлять
-
+<h1>
+Создай свой подарок<br>
+с <span>FiveFind</span>
 </h1>
 
-
-
-<p id="subtitle">
-
-FiveFind — простой способ дарить Telegram Stars и Premium.
-
+<p>
+Дарите Telegram Premium и Telegram Stars
+в красивой упаковке.
 </p>
-
-
 
 
 <div class="buttons">
 
-
-<a 
-href="https://t.me/Fivefindstarsbot?start=fivefindsite"
-class="main-btn"
-target="_blank">
-
-⭐ Открыть Stars
-
+<a class="button telegram" href="https://t.me/Fivefindstarsbot">
+🎁 Открыть бота
 </a>
 
 
-
-<a 
-href="https://t.me/FiveFindvpnbot"
-class="second-btn"
-target="_blank">
-
-🔒 VPN
-
+<a class="button site" href="https://fivefind.github.io/">
+🌐 Официальный сайт
 </a>
-
 
 </div>
 
+
+<div class="card">
+
+<h2>✨ Telegram Gifts</h2>
+
+<p>
+Premium • Stars • Уникальные подарки
+</p>
+
+</div>
 
 
 </section>
-
-
-
-
-
-
-
-
-<section class="services">
-
-
-<h2>
-Наши сервисы
-</h2>
-
-
-
-<div class="service-list">
-
-
-
-
-
-<div class="service-card">
-
-
-<div class="icon">
-⭐
-</div>
-
-
-<h3>
-Telegram Stars
-</h3>
-
-
-<p>
-Покупайте и отправляйте Telegram Stars через удобного бота.
-</p>
-
-
-<a 
-href="https://t.me/Fivefindstarsbot?start=fivefindsite"
-target="_blank">
-
-Перейти
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="service-card">
-
-
-<div class="icon">
-💎
-</div>
-
-
-<h3>
-Telegram Premium
-</h3>
-
-
-<p>
-Дарите Premium друзьям быстро и удобно.
-</p>
-
-
-<a 
-href="https://t.me/Fivefindstarsbot?start=fivefindsite"
-target="_blank">
-
-Подарить
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="service-card">
-
-
-<div class="icon">
-🔒
-</div>
-
-
-<h3>
-FiveFind VPN
-</h3>
-
-
-<p>
-Используйте VPN через простой Telegram-бот.
-</p>
-
-
-<a 
-href="https://t.me/FiveFindvpnbot"
-target="_blank">
-
-Открыть
-
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="about">
-
-
-<h2>
-О FiveFind
-</h2>
-
-
-
-<p>
-
-FiveFind объединяет удобные Telegram-сервисы.
-Создавайте подарки, отправляйте Stars и используйте дополнительные возможности.
-
-</p>
-
-
-
-</section>
-
-
-
-
-
-
-
-<section class="community">
-
-
-<h2>
-Наши контакты
-</h2>
-
-
-
-<div class="contact-list">
-
-
-
-<a href="https://t.me/fivefind" target="_blank">
-
-📢 Telegram канал
-
-</a>
-
-
-
-<a href="https://t.me/battoy" target="_blank">
-
-👤 Создатель проекта
-
-</a>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
 
 
 </main>
 
 
-
-
-
-
-
-<footer>
-
-
-<div class="footer-logo">
-
-FiveFind
-
-</div>
-
-
-
-<p>
-
-© 2026 FiveFind
-
-</p>
-
-
-
-</footer>
-
-
-
-
-
-
-
-<script src="script.js"></script>
-
-
 <script src="stars.js"></script>
 
-
-
 </body>
-
-
 </html>
