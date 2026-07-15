@@ -60,12 +60,37 @@ header {
 
 .logo {
 
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-size:32px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    text-shadow:
+    0 0 10px #9333ea,
+    0 0 25px #9333ea;
+
+    animation: logoGlow 3s infinite alternate;
 
 }
 
+
+@keyframes logoGlow {
+
+    from {
+
+        filter:brightness(1);
+
+    }
+
+
+    to {
+
+        filter:brightness(1.4);
+
+    }
+
+}
 
 .logo span {
 
