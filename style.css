@@ -177,3 +177,16 @@ font-size:34px;
 }
 
 }
+#stars-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body > *:not(#stars-canvas) {
+    position: relative;
+    z-index: 2;
+}
